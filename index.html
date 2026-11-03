@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -32,7 +33,6 @@
             <h2>Kayıt Ol</h2>
             <p>Bilgilerinizi girerek talep oluşturun.</p>
             
-            <!-- BURAYA KENDİ FORMSPREE LİNKİNİ YAZABİLİRSİN -->
             <form id="reg-form" action="https://formspree.io/f/xwllwjdr" method="POST" onsubmit="handleRegister(event)">
                 <input type="text" name="Kullanici_Adi" id="reg-name" placeholder="Kullanıcı Adı" required>
                 <input type="email" name="E_Posta" id="reg-email" placeholder="E-Posta Adresi" required>
@@ -65,8 +65,8 @@
 
     <script>
         const approvedEmails = [
-            "canerafsar256853@gmail.com", // Senin mailin
-            "havin@example.com"            // Onayladığın diğer mailler buraya eklenecek
+            "canerafsar256853@gmail.com",
+            "canerafsar2568@gmail.com"
         ];
 
         function toggleAuth(type) {
@@ -118,7 +118,6 @@
                 return;
             }
 
-            // Onaylı listesinde mi kontrol et
             if (approvedEmails.includes(email)) {
                 document.getElementById('auth-card').style.display = 'none';
                 document.getElementById('app-content').style.display = 'block';
